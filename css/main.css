@@ -26,6 +26,7 @@ a:hover {
 
 h1.section-title {
   background: #000;
+  color: #FFF;
   display: inline-block;
   font-size: 3.4285714286em;
   padding: 8px 18px;
@@ -52,6 +53,11 @@ h1.section-title {
 }
 .event .event-title h2 {
   ont-size: 1.7142857143em;
+  color: #FFF;
+}
+.event .event-title a {
+
+  color: #FFF;
 }
 .event .event-title span {
   display: block;
@@ -122,11 +128,6 @@ section h3.section-subheading {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
-  }
-}
 
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -136,17 +137,6 @@ section h3.section-subheading {
 .btn-xl {
   font-size: 18px;
   padding: 20px 40px;
-}
-
-.btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
-}
-
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
-  color: white;
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -210,13 +200,11 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.1);
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -239,18 +227,16 @@ img::-moz-selection {
 }
 
 header.masthead {
-  text-align: center;
-  color: white;
-  background: url(../img/bg-pattern.png),#000000;
-
-  /*background-image: url("../img/");*/
-  /*background-repeat: no-repeat;*/
-  /*background-attachment: scroll;*/
-  /*background-position: center center;*/
-  /*-webkit-background-size: cover;*/
-  /*-moz-background-size: cover;*/
-  /*-o-background-size: cover;*/
-  /*background-size: cover;*/
+  height: 800px;
+  max-height: 1000px;
+  background-image: url("../img/foto-promo.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: initial;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header.masthead .intro-text {
@@ -277,7 +263,7 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 400px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -328,8 +314,17 @@ header.masthead .intro-text .intro-heading {
   background: rgba(254, 209, 54, 0.9);
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1;
+.portfolio-item {
+  overflow: hidden;
+  position: relative;
+}
+
+a.portfolio-link .img-fluid:hover {
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -574,6 +569,15 @@ header.masthead .intro-text .intro-heading {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+}
+
+.card-shadow {
+  transition: border 0.35s ease-in-out;
+}
+
+.card-shadow:hover {
+  border: 1px solid #000000;
+
 }
 
 @media (min-width: 768px) {
