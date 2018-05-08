@@ -572,13 +572,24 @@ a.portfolio-link .img-fluid:hover {
 }
 
 .card-shadow {
-  transition: border 0.35s ease-in-out;
+  box-shadow: none;
+  -webkit-transition: box-shadow .25s ease-in-out;
+  -moz-transition: box-shadow .25s ease-in-out;
+  -ms-transition: box-shadow .25s ease-in-out;
+  -o-transition: box-shadow .25s ease-in-out;
+  transition: box-shadow .25s ease-in-out;
 }
 
 .card-shadow:hover {
-  border: 1px solid #000000;
-
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
+
+#about {
+  padding-top: 20px;
+}
+
 
 @media (min-width: 768px) {
   .timeline:before {
