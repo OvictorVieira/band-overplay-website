@@ -52,13 +52,25 @@ h1.section-title {
   flex: auto 1;
 }
 .event .event-title h2 {
-  ont-size: 1.7142857143em;
+  font-size: 1.72em;
   color: #FFF;
 }
-.event .event-title a {
 
+.event .event-title h6 {
+  font-size: .8em;
   color: #FFF;
 }
+
+.event .event-title a {
+  color: #FFF;
+}
+
+.event-links a {
+  background-color: #FFF;
+  color: #000;
+  font-weight: 500;
+}
+
 .event .event-title span {
   display: block;
   font-size: .75em;
@@ -585,11 +597,6 @@ a.portfolio-link .img-fluid:hover {
   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
-
-#about {
-  padding-top: 20px;
-}
-
 
 @media (min-width: 768px) {
   .timeline:before {
