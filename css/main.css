@@ -261,7 +261,7 @@ img::-moz-selection {
 header.masthead {
   height: 800px;
   max-height: 1000px;
-  background-image: url("../img/banner/foto-promo.png");
+  background-image: url("../img/banner/foto-promo.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: initial;
