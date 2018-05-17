@@ -12,7 +12,7 @@
 
     <link rel="shortcut icon" type="image/png" href="img/logos/favicon-overplay.png"/>
     <!-- Bootstrap core CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="css/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +32,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-fluid">
         <a class="navbar-brand js-scroll-trigger pl-2" href="#page-top">
-            <img class="img-custom" src="img/banner/logo-2.png">
+            <img id="img-banner-menu" class="img-custom" src="img/banner/logo-2.png">
         </a>
         <button class="navbar-toggler navbar-toggler-right" id="menuButton" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
@@ -206,12 +206,12 @@
               <p class="text-muted">Vocal</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.facebook.com/profile.php?id=100000367374878" target="_blank">
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="#">
+                <li class="list-inline-item" style="display: none;">
+                  <a href="#" target="_blank">
                     <i class="fab fa-instagram"></i>
                   </a>
                 </li>
@@ -225,12 +225,12 @@
               <p class="text-muted">Lead Guitar</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.facebook.com/pedroparis1986" target="_blank">
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="#">
+                <li class="list-inline-item" >
+                  <a href="https://www.instagram.com/pedroparisrocker/" target="_blank">
                     <i class="fab fa-instagram"></i>
                   </a>
                 </li>
@@ -244,12 +244,12 @@
               <p class="text-muted">Rhythm Guitar</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.facebook.com/andre.angeli.1" target="_blank">
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.instagram.com/andreangeli09/" target="_blank">
                     <i class="fab fa-instagram"></i>
                   </a>
                 </li>
@@ -265,12 +265,12 @@
                       <p class="text-muted">Bass Guitar</p>
                       <ul class="list-inline social-buttons">
                           <li class="list-inline-item">
-                              <a href="#">
+                              <a href="https://www.facebook.com/profile.php?id=1408808502" target="_blank">
                                   <i class="fab fa-facebook-square"></i>
                               </a>
                           </li>
                           <li class="list-inline-item">
-                              <a href="#">
+                              <a href="https://www.instagram.com/otalvituxo/" target="_blank">
                                   <i class="fab fa-instagram"></i>
                               </a>
                           </li>
@@ -284,12 +284,12 @@
                       <p class="text-muted">Drums</p>
                       <ul class="list-inline social-buttons">
                           <li class="list-inline-item">
-                              <a href="#">
+                              <a href="https://www.facebook.com/rodrigo.s.drums?ref=br_rs" target="_blank">
                                   <i class="fab fa-facebook-square"></i>
                               </a>
                           </li>
                           <li class="list-inline-item">
-                              <a href="#">
+                              <a href="https://www.instagram.com/rodrigo_santospersonal/" target="_blank">
                                   <i class="fab fa-instagram"></i>
                               </a>
                           </li>
@@ -320,25 +320,41 @@
 
                             </div>
                             <div class="event-title">
-                                <h2>00 Jun 2018<span>Festa da Cerejeira</span></h2>
+                                <h2>30 Jun 2018<span>Festa da Cerejeira</span></h2>
                                 <h6>Concha Acástica Garça, SP</h6>
                             </div>
                             <div class="event-links">
                                 <a class="btn btn-default" href="#" data-toggle="modal" data-target="#modal-event-5"><span>Mais Detalhes</span></a>
                             </div>
 
-                            <div id="modal-event-5" class="modal modal-event fade" tabindex="-1" role="dialog" aria-labelledby="modalEvent_2">
-                                <div class="modal-dialog d-flex align-items-center h-100" role="document">
-                                    <div class="modal-content fadeMenuOpen">
-                                        <div class="modal-body">
-                                            <div class="modal-title text-left">
-                                                <div>
-                                                    <img class="img-fluid mb-5" src="img/banner/cerejeira.jpg">
+                            <div class="portfolio-modal modal fade" id="modal-event-5" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="close-modal" data-dismiss="modal">
+                                            <div class="lr">
+                                                <div class="rl"></div>
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid">
+                                            <div class="row container-mobile">
+                                                <div class="offset-lg-1 col-lg-6">
+                                                    <div class="carousel slide" data-ride="carousel">
+                                                        <div class="carousel-inner" role="listbox">
+                                                            <div class="carousel-item active">
+                                                                <img class="img-fluid mb-5" src="img/banner/cerejeira.jpg">
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <h3 class="h5">
-                                                    <span>00 Jun 2018</span>
-                                                    <div class="venue-name">Festa da Cerejeira - Garça, SP</div>
-                                                </h3>
+
+                                                <div class="col-lg-4 text-left">
+                                                    <div class="box-contact-us-right">
+                                                        <h2 class="section-heading text-body">30 Jun 2018 às 12:30 hrs</h2>
+                                                        <div class="venue-name">Festa da Cerejeira - Garça, SP</div>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                                <div class="offset-lg-1"></div>
                                             </div>
                                             <button class="btn btn-custom fa-pull-right" data-dismiss="modal" type="button">
                                                 <i class="fa fa-times"></i>
@@ -348,7 +364,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </article>
                     </div>
                 </div>
@@ -526,11 +541,11 @@
         <section id="formContact">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-7 col-md-4">
                         <img class="img-fluid" src="img/banner/logo.png">
                     </div>
 
-                    <div class="offset-lg-1 col-lg-7 text-left">
+                    <div class="offset-lg-1 offset-md-1 col-lg-7 col-md-7 text-left">
                         <div class="box-contact-us-right">
                             <h2 class="section-heading font-weight-normal">Contratar a Overplay?</h2>
                             <p>
@@ -538,11 +553,11 @@
                                 <br>
                                 <div class="d-flex align-items-center box-contact-us mb-3">
                                     <i class="fab fa-whatsapp fa-3x"></i>
-                                    <h5 class="text-muted mb-0 pl-3">(14) 9 9999-9999 - <span class="text-body">Rodrigo Santos</span></h5>
+                                    <h5 class="text-muted mb-0 pl-3"><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5514981333267">(14) 9 98133-3267</a> - <span class="text-body">Rodrigo Santos</span></h5>
                                 </div>
                                 <div class="d-flex align-items-center box-contact-us mb-3">
                                     <i class="fab fa-whatsapp fa-3x"></i>
-                                    <h5 class="text-muted mb-0 pl-3">(14) 9 9999-9999 - <span class="text-body">Pedro Paris</span></h5>
+                                    <h5 class="text-muted mb-0 pl-3"><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5514997538160">(14) 9 99753-8160</a> - <span class="text-body">Pedro Paris</span></h5>
                                 </div>
                                 <div class="d-flex align-items-center box-contact-us mb-3">
                                     <i class="fas fa-envelope fa-3x"></i>
@@ -566,17 +581,17 @@
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item list-inline-item-bottom">
-                <a href="#">
+                <a href="https://www.facebook.com/bandaoverplay/" target="_blank">
                     <i class="fab fa-facebook-square fab-icon-custom-footer"></i>
                 </a>
               </li>
               <li class="list-inline-item list-inline-item-bottom">
-                <a href="#">
+                <a href="https://www.instagram.com/bandaoverplayoficial/" target="_blank">
                     <i class="fab fa-instagram fab-icon-custom-footer"></i>
                 </a>
               </li>
               <li class="list-inline-item list-inline-item-bottom">
-                <a href="#">
+                <a href="https://www.youtube.com/channel/UCD6GCBvS_srdJRi9krhU72Q" target="_blank">
                     <i class="fab fa-youtube fab-icon-custom-footer"></i>
                 </a>
               </li>
@@ -600,7 +615,7 @@
             </div>
           </div>
           <div class="container-fluid">
-            <div class="row">
+            <div class="row container-mobile">
                 <div class="offset-lg-1 col-lg-6">
                     <div id="carouselControlsModal1" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner" role="listbox">
@@ -618,11 +633,11 @@
                           </div>
                       </div>
                       <a class="carousel-control-prev" href="#carouselControlsModal1" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <i class="fas fa-angle-left angle-left-custom fa-3x"></i>
                           <span class="sr-only">Previous</span>
                       </a>
                       <a class="carousel-control-next" href="#carouselControlsModal1" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <i class="fas fa-angle-right angle-left-custom fa-3x"></i>
                           <span class="sr-only">Next</span>
                       </a>
                     </div>
@@ -641,11 +656,6 @@
                             </h5>
                         </p>
                     </div>
-                    <br>
-                    <button class="btn btn-custom fa-pull-right" data-dismiss="modal" type="button">
-                        <i class="fa fa-times"></i>
-                        Fechar
-                    </button>
                 </div>
                 <div class="offset-lg-1"></div>
             </div>
@@ -664,7 +674,7 @@
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row container-mobile">
                         <div class="offset-lg-1 col-lg-6">
                             <div id="carouselControlsModal2" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner" role="listbox">
@@ -688,11 +698,11 @@
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselControlsModal2" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <i class="fas fa-angle-left angle-left-custom fa-3x"></i>
                                     <span class="sr-only">Previous</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselControlsModal2" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <i class="fas fa-angle-right angle-left-custom fa-3x"></i>
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
@@ -703,17 +713,12 @@
                                 <h2 class="section-heading text-body">Cão Pererê <br> Márilia, SP</h2>
                                 <p>
                                     <h5 class="text-muted font-weight-normal">
-                                        Evento beneficiente em prol da “Casa de apoio de Garça'' e também aos pacientes com Câncer na cidade de Jaú-SP,
+                                        Evento beneficiente em prol da “Casa de apoio de Garça" e também aos pacientes com Câncer na cidade de Jaú-SP,
                                         custo da entrada foi R$ 10,00 por moto e 1 pacote de macarrão por pessoa.
                                         No evento teve praça de alimentação e área de camping!
                                     </h5>
                                 </p>
                             </div>
-                            <br>
-                            <button class="btn btn-custom fa-pull-right" data-dismiss="modal" type="button">
-                                <i class="fa fa-times"></i>
-                                Fechar
-                            </button>
                         </div>
                         <div class="offset-lg-1"></div>
                     </div>
@@ -732,7 +737,7 @@
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row container-mobile">
                         <div class="offset-lg-1 col-lg-6">
                             <div id="carouselControlsModal3" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner" role="listbox">
@@ -816,11 +821,11 @@
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselControlsModal3" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <i class="fas fa-angle-left angle-left-custom fa-3x"></i>
                                     <span class="sr-only">Previous</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselControlsModal3" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <i class="fas fa-angle-right angle-left-custom fa-3x"></i>
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
@@ -837,11 +842,6 @@
                                 </h5>
                                 </p>
                             </div>
-                            <br>
-                            <button class="btn btn-custom fa-pull-right" data-dismiss="modal" type="button">
-                                <i class="fa fa-times"></i>
-                                Fechar
-                            </button>
                         </div>
                         <div class="offset-lg-1"></div>
                     </div>
@@ -860,7 +860,7 @@
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row container-mobile">
                         <div class="offset-lg-1 col-lg-6">
                             <div id="carouselControlsModal4" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner" role="listbox">
@@ -890,11 +890,11 @@
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselControlsModal4" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <i class="fas fa-angle-left angle-left-custom fa-3x"></i>
                                     <span class="sr-only">Previous</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselControlsModal4" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <i class="fas fa-angle-right angle-left-custom fa-3x"></i>
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
@@ -909,11 +909,6 @@
                                 </h5>
                                 </p>
                             </div>
-                            <br>
-                            <button class="btn btn-custom fa-pull-right" data-dismiss="modal" type="button">
-                                <i class="fa fa-times"></i>
-                                Fechar
-                            </button>
                         </div>
                         <div class="offset-lg-1"></div>
                     </div>
@@ -923,9 +918,8 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
